@@ -1,0 +1,138 @@
+2025-12-30 03:32:19,409 - Log file for this run: C:\Users\USER\Desktop\TRYMAX78000\ai8x-training\ai8x-training\logs\2025.12.30-033219\2025.12.30-033219.log
+2025-12-30 03:32:19,412 - Configuring device: MAX78000, simulate=False.
+2025-12-30 03:32:19,421 - No CUDA, ROCm, or MPS hardware acceleration, training will be slow
+2025-12-30 03:32:19,458 - Optimizer Type: <class 'torch.optim.adam.Adam'>
+2025-12-30 03:32:19,460 - Optimizer Args: {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0.0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None}
+2025-12-30 03:32:19,736 - Reading compression schedule from: policies/schedule-catsdogs.yaml
+2025-12-30 03:32:19,741 - torch.compile() not available, using "eager" mode
+2025-12-30 03:32:19,741 - Dataset sizes:
+	training=4171
+	validation=463
+	test=818
+2025-12-30 03:32:19,742 - 
+
+2025-12-30 03:32:19,743 - Training epoch: 4171 samples (256 per mini-batch, world size: 1)
+2025-12-30 03:33:16,449 - Epoch: [0][   10/   17]    Overall Loss 0.595829    Objective Loss 0.595829                                        LR 0.001000    Time 5.669800    
+2025-12-30 03:33:32,174 - Epoch: [0][   17/   17]    Overall Loss 0.517807    Objective Loss 0.517807    Top1 84.894260    LR 0.001000    Time 4.259687    
+2025-12-30 03:33:34,226 - --- validate (epoch=0)-----------
+2025-12-30 03:33:34,231 - 463 samples (256 per mini-batch)
+2025-12-30 03:33:57,709 - Epoch: [0][    2/    2]    Loss 0.422537    Top1 83.369330    
+2025-12-30 03:33:59,235 - ==> Top1: 83.369    Loss: 0.423
+
+2025-12-30 03:33:59,240 - ==> Confusion:
+[[200  49]
+ [ 28 186]]
+
+2025-12-30 03:33:59,255 - ==> Best [Top1: 83.369   Params: 57776 on epoch: 0]
+2025-12-30 03:33:59,257 - Saving checkpoint to: logs\2025.12.30-033219\checkpoint.pth.tar
+2025-12-30 03:33:59,289 - 
+
+2025-12-30 03:33:59,291 - Training epoch: 4171 samples (256 per mini-batch, world size: 1)
+2025-12-30 03:34:51,583 - Epoch: [1][   10/   17]    Overall Loss 0.375108    Objective Loss 0.375108                                        LR 0.001000    Time 5.228701    
+2025-12-30 03:35:08,492 - Epoch: [1][   17/   17]    Overall Loss 0.357988    Objective Loss 0.357988    Top1 87.915408    LR 0.001000    Time 4.069961    
+2025-12-30 03:35:10,496 - --- validate (epoch=1)-----------
+2025-12-30 03:35:10,497 - 463 samples (256 per mini-batch)
+2025-12-30 03:35:33,506 - Epoch: [1][    2/    2]    Loss 0.315907    Top1 87.473002    
+2025-12-30 03:35:35,900 - ==> Top1: 87.473    Loss: 0.316
+
+2025-12-30 03:35:35,905 - ==> Confusion:
+[[209  40]
+ [ 18 196]]
+
+2025-12-30 03:35:35,930 - ==> Best [Top1: 87.473   Params: 57776 on epoch: 1]
+2025-12-30 03:35:35,932 - Saving checkpoint to: logs\2025.12.30-033219\checkpoint.pth.tar
+2025-12-30 03:35:35,966 - 
+
+2025-12-30 03:35:35,967 - Training epoch: 4171 samples (256 per mini-batch, world size: 1)
+2025-12-30 03:36:43,870 - Epoch: [2][   10/   17]    Overall Loss 0.280676    Objective Loss 0.280676                                        LR 0.001000    Time 6.762587    
+2025-12-30 03:37:06,445 - Epoch: [2][   17/   17]    Overall Loss 0.253781    Objective Loss 0.253781    Top1 93.051360    LR 0.001000    Time 5.304269    
+2025-12-30 03:37:08,804 - --- validate (epoch=2)-----------
+2025-12-30 03:37:08,811 - 463 samples (256 per mini-batch)
+2025-12-30 03:37:29,752 - Epoch: [2][    2/    2]    Loss 0.230629    Top1 91.360691    
+2025-12-30 03:37:31,391 - ==> Top1: 91.361    Loss: 0.231
+
+2025-12-30 03:37:31,400 - ==> Confusion:
+[[217  32]
+ [  8 206]]
+
+2025-12-30 03:37:31,429 - ==> Best [Top1: 91.361   Params: 57776 on epoch: 2]
+2025-12-30 03:37:31,433 - Saving checkpoint to: logs\2025.12.30-033219\checkpoint.pth.tar
+2025-12-30 03:37:31,475 - 
+
+2025-12-30 03:37:31,476 - Training epoch: 4171 samples (256 per mini-batch, world size: 1)
+2025-12-30 03:38:25,129 - Epoch: [3][   10/   17]    Overall Loss 0.243448    Objective Loss 0.243448                                        LR 0.001000    Time 5.363570    
+2025-12-30 03:38:42,679 - Epoch: [3][   17/   17]    Overall Loss 0.240871    Objective Loss 0.240871    Top1 92.447130    LR 0.001000    Time 4.186443    
+2025-12-30 03:38:44,958 - --- validate (epoch=3)-----------
+2025-12-30 03:38:44,963 - 463 samples (256 per mini-batch)
+2025-12-30 03:39:10,745 - Epoch: [3][    2/    2]    Loss 0.223366    Top1 91.792657    
+2025-12-30 03:39:12,485 - ==> Top1: 91.793    Loss: 0.223
+
+2025-12-30 03:39:12,490 - ==> Confusion:
+[[243   6]
+ [ 32 182]]
+
+2025-12-30 03:39:12,518 - ==> Best [Top1: 91.793   Params: 57776 on epoch: 3]
+2025-12-30 03:39:12,519 - Saving checkpoint to: logs\2025.12.30-033219\checkpoint.pth.tar
+2025-12-30 03:39:12,547 - 
+
+2025-12-30 03:39:12,548 - Training epoch: 4171 samples (256 per mini-batch, world size: 1)
+2025-12-30 03:40:02,366 - Epoch: [4][   10/   17]    Overall Loss 0.207812    Objective Loss 0.207812                                        LR 0.001000    Time 4.981204    
+2025-12-30 03:40:17,921 - Epoch: [4][   17/   17]    Overall Loss 0.192421    Objective Loss 0.192421    Top1 94.864048    LR 0.001000    Time 3.844541    
+2025-12-30 03:40:20,018 - --- validate (epoch=4)-----------
+2025-12-30 03:40:20,023 - 463 samples (256 per mini-batch)
+2025-12-30 03:40:41,309 - Epoch: [4][    2/    2]    Loss 0.170441    Top1 94.168467    
+2025-12-30 03:40:42,881 - ==> Top1: 94.168    Loss: 0.170
+
+2025-12-30 03:40:42,884 - ==> Confusion:
+[[227  22]
+ [  5 209]]
+
+2025-12-30 03:40:42,900 - ==> Best [Top1: 94.168   Params: 57776 on epoch: 4]
+2025-12-30 03:40:42,904 - Saving checkpoint to: logs\2025.12.30-033219\checkpoint.pth.tar
+2025-12-30 03:40:42,940 - --- test (ckpt) ---------------------
+2025-12-30 03:40:42,943 - 818 samples (256 per mini-batch)
+2025-12-30 03:41:02,537 - Test: [    4/    4]    Loss 0.037525    Top1 98.533007    
+2025-12-30 03:41:04,128 - ==> Top1: 98.533    Loss: 0.038
+
+2025-12-30 03:41:04,129 - ==> Confusion:
+[[340   9]
+ [  3 466]]
+
+2025-12-30 03:41:04,132 - --- test (best) ---------------------
+2025-12-30 03:41:04,134 - => loading checkpoint logs\2025.12.30-033219\best.pth.tar
+2025-12-30 03:41:04,306 - => Checkpoint contents:
++----------------------+-------------+-----------+
+| Key                  | Type        | Value     |
+|----------------------+-------------+-----------|
+| arch                 | str         | ai85cdnet |
+| compression_sched    | dict        |           |
+| epoch                | int         | 4         |
+| extras               | dict        |           |
+| optimizer_state_dict | dict        |           |
+| optimizer_type       | type        | Adam      |
+| state_dict           | OrderedDict |           |
++----------------------+-------------+-----------+
+
+2025-12-30 03:41:04,308 - => Checkpoint['extras'] contents:
++--------------+--------+---------+
+| Key          | Type   |   Value |
+|--------------+--------+---------|
+| best_epoch   | int    |  4      |
+| best_mAP     | int    |  0      |
+| best_top1    | float  | 94.1685 |
+| current_mAP  | int    |  0      |
+| current_top1 | float  | 94.1685 |
++--------------+--------+---------+
+
+2025-12-30 03:41:04,310 - Loaded compression schedule from checkpoint (epoch 4)
+2025-12-30 03:41:04,317 - => loaded 'state_dict' from checkpoint 'logs\2025.12.30-033219\best.pth.tar'
+2025-12-30 03:41:04,318 - 818 samples (256 per mini-batch)
+2025-12-30 03:41:24,091 - Test: [    4/    4]    Loss 0.036752    Top1 98.533007    
+2025-12-30 03:41:25,712 - ==> Top1: 98.533    Loss: 0.037
+
+2025-12-30 03:41:25,713 - ==> Confusion:
+[[340   9]
+ [  3 466]]
+
+2025-12-30 03:41:25,736 - 
+2025-12-30 03:41:25,742 - Log file for this run: C:\Users\USER\Desktop\TRYMAX78000\ai8x-training\ai8x-training\logs\2025.12.30-033219\2025.12.30-033219.log

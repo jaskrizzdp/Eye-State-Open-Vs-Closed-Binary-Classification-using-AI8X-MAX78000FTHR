@@ -1,0 +1,47 @@
+2025-12-30 04:38:13,305 - Log file for this run: C:\Users\USER\Desktop\TRYMAX78000\ai8x-training\ai8x-training\logs\2025.12.30-043813\2025.12.30-043813.log
+2025-12-30 04:38:13,307 - Configuring device: MAX78000, simulate=True.
+2025-12-30 04:38:13,311 - No CUDA, ROCm, or MPS hardware acceleration, training will be slow
+2025-12-30 04:38:13,359 - => loading checkpoint logs/2025.12.30-033219/eyes-qat8-q.pth.tar
+2025-12-30 04:38:13,363 - => Checkpoint contents:
++----------------------+-------------+-----------+
+| Key                  | Type        | Value     |
+|----------------------+-------------+-----------|
+| arch                 | str         | ai85cdnet |
+| compression_sched    | dict        |           |
+| epoch                | int         | 4         |
+| extras               | dict        |           |
+| optimizer_state_dict | dict        |           |
+| optimizer_type       | type        | Adam      |
+| state_dict           | OrderedDict |           |
++----------------------+-------------+-----------+
+
+2025-12-30 04:38:13,365 - => Checkpoint['extras'] contents:
++-----------------+--------+-------------------+
+| Key             | Type   | Value             |
+|-----------------+--------+-------------------|
+| best_epoch      | int    | 4                 |
+| best_mAP        | int    | 0                 |
+| best_top1       | float  | 94.16846652267819 |
+| clipping_method | str    | MAX_BIT_SHIFT     |
+| current_mAP     | int    | 0                 |
+| current_top1    | float  | 94.16846652267819 |
++-----------------+--------+-------------------+
+
+2025-12-30 04:38:13,366 - Loaded compression schedule from checkpoint (epoch 4)
+2025-12-30 04:38:13,372 - => loaded 'state_dict' from checkpoint 'logs/2025.12.30-033219/eyes-qat8-q.pth.tar'
+2025-12-30 04:38:13,374 - Optimizer Type: <class 'torch.optim.sgd.SGD'>
+2025-12-30 04:38:13,375 - Optimizer Args: {'lr': 0.1, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0001, 'nesterov': False, 'maximize': False, 'foreach': None, 'differentiable': False}
+2025-12-30 04:38:13,555 - torch.compile() not available, using "eager" mode
+2025-12-30 04:38:13,557 - Dataset sizes:
+	test=818
+2025-12-30 04:38:13,558 - --- test (ckpt) ---------------------
+2025-12-30 04:38:13,558 - 818 samples (256 per mini-batch)
+2025-12-30 04:38:42,890 - Test: [    4/    4]    Loss 0.190152    Top1 94.743276    
+2025-12-30 04:38:44,704 - ==> Top1: 94.743    Loss: 0.190
+
+2025-12-30 04:38:44,731 - ==> Confusion:
+[[342   7]
+ [ 36 433]]
+
+2025-12-30 04:38:44,746 - 
+2025-12-30 04:38:44,750 - Log file for this run: C:\Users\USER\Desktop\TRYMAX78000\ai8x-training\ai8x-training\logs\2025.12.30-043813\2025.12.30-043813.log
